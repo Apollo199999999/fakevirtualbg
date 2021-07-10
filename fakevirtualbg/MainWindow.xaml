@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:fakevirtualbg"
         mc:Ignorable="d"
-        Title="MainWindow" Height="315" Width="420" ResizeMode="NoResize">
+        Title="fakevirtualbg" Height="315" Width="420" ResizeMode="NoResize">
     <Grid>
         <Label x:Name="label" Content="Step 1: Choose a video of yourself to use" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
         <Button x:Name="OpenVideoBtn" Content="Select Video" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="152" Height="28" Click="OpenVideoBtn_Click" />
