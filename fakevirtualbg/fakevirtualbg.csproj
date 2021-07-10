@@ -101,6 +101,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\ffmpegScript.bat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Resources\ffplay.exe">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

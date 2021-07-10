@@ -71,6 +71,20 @@ namespace fakevirtualbg.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to ::Script to generate the virtual background
+        ///cd C:\FakeVirtualBGTemp\
+        ///ffmpeg -i original.mp4 -vf reverse reverse.mp4
+        ///ffmpeg -i original.mp4 -c copy -bsf:v h264_mp4toannexb -f mpegts input1.ts
+        ///ffmpeg -i reverse.mp4 -c copy -bsf:v h264_mp4toannexb -f mpegts input2.ts
+        ///ffmpeg -i &quot;concat:input1.ts|input2.ts&quot; -c copy output.mp4.
+        /// </summary>
+        internal static string ffmpegScript {
+            get {
+                return ResourceManager.GetString("ffmpegScript", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] ffplay {
