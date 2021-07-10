@@ -7,9 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize">
     <Grid>
-        <Label x:Name="label" Content="Step 1: Choose a video of yourself" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label" Content="Step 1: Choose a video of yourself to use" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
         <Button x:Name="OpenVideoBtn" Content="Select Video" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="152" Height="28" Click="OpenVideoBtn_Click" />
-        <TextBlock x:Name="filepathText" HorizontalAlignment="Left" Margin="167,47,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:Name="filepathText" HorizontalAlignment="Left" Margin="167,47,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy" Content="Step 2: Choose where to save your video" HorizontalAlignment="Left" Margin="10,95,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="VideoSaveLoc" Content="Choose location to save your video" HorizontalAlignment="Left" Margin="10,126,0,0" VerticalAlignment="Top" Height="28" Width="204"/>
 
     </Grid>
 </Window>
