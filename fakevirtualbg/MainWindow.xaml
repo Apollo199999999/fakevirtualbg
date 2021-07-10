@@ -5,13 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:fakevirtualbg"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize">
+        Title="MainWindow" Height="315" Width="420" ResizeMode="NoResize">
     <Grid>
         <Label x:Name="label" Content="Step 1: Choose a video of yourself to use" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
         <Button x:Name="OpenVideoBtn" Content="Select Video" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="152" Height="28" Click="OpenVideoBtn_Click" />
         <TextBlock x:Name="filepathText" HorizontalAlignment="Left" Margin="167,47,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <Label x:Name="label_Copy" Content="Step 2: Choose where to save your video" HorizontalAlignment="Left" Margin="10,95,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="VideoSaveLoc" Content="Choose location to save your video" HorizontalAlignment="Left" Margin="10,126,0,0" VerticalAlignment="Top" Height="28" Width="204"/>
+        <TextBlock x:Name="savepathText" Text="" HorizontalAlignment="Left" Margin="219,132,0,0" VerticalAlignment="Top" TextWrapping="Wrap"/>
+        <Button x:Name="VideoSaveLoc" Content="Choose location to save your video" HorizontalAlignment="Left" Margin="10,126,0,0" VerticalAlignment="Top" Height="28" Width="204" Click="VideoSaveLoc_Click"/>
+        <Label x:Name="label_Copy1" Content="Step 3: Click 'Generate video' to generate the fake virtual background" HorizontalAlignment="Left" Margin="10,180,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="GenerateVidBtn" Content="Generate video" HorizontalAlignment="Left" Margin="10,211,0,0" VerticalAlignment="Top" Height="28" Width="170" Click="GenerateVidBtn_Click"/>
 
     </Grid>
 </Window>
